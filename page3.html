@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Route 3</title>
+	<link rel="stylesheet" href="style3.css">
+	<style type="text/css">
+		body {
+			background-color: #a9ea27;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		button {
+			background: linear-gradient(to bottom, #ff8c00, #ff5722);
+			border: none;
+			color: white;
+			padding: 15px 30px;
+			border-radius: 50px;
+			font-size: 18px;
+			cursor: pointer;
+			animation: buttonAnimation 1s ease-in-out infinite;
+		}
+
+		button:hover {
+			background: linear-gradient(to bottom, #ff5722, #ff8c00);
+		}
+
+		@keyframes buttonAnimation {
+			0% {
+				transform: translateY(0);
+			}
+			50% {
+				transform: translateY(-5px);
+			}
+			100% {
+				transform: translateY(0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+        <h1>Happy Birthday Divya!</h1>
+    </header>      
+    <footer>
+        <p>&copy; 2023 - Made with love by Manju</p>
+    </footer>
+	<div class="page active" id="page1">
+		<h1 class="italic animated">Happy birthday to a girl who always brightens up my day with her smile! May your birthday be filled with laughter, love, and all the things that make you happy.</h1>
+		<h1 class="center">This way</h1>
+		<button  class="center" id="btn" onclick="window.location.href='page4.html'">Next</button>
+	  </div>
+</body>
+</html>

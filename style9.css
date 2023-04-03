@@ -1,0 +1,103 @@
+  
+  header {
+    background-color: #FCEEB5;
+    color: #9B4D09;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  footer {
+    background-color: #9fb26a89;
+    color: #9B4D09;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+  }
+  
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+  
+  
+  .video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+  }
+  
+  .video-container video {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .balloon-left,
+  .balloon-right {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #ffbb00;
+    border-radius: 50%;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .balloon-left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-name: balloon-left;
+  }
+  
+  .balloon-right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-name: balloon-right;
+  }
+  
+  @keyframes balloon-left {
+    0% {
+      transform: translateY(-50%) translateX(-100%);
+    }
+    50% {
+      transform: translateY(-75%) translateX(-50%);
+    }
+    100% {
+      transform: translateY(-50%) translateX(-100%);
+    }
+  }
+  
+  @keyframes balloon-right {
+    0% {
+      transform: translateY(-50%) translateX(100%);
+    }
+    50% {
+      transform: translateY(-75%) translateX(50%);
+    }
+    100% {
+      transform: translateY(-50%) translateX(100%);
+    }
+  }
+  
